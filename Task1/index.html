@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+    <div class="container">
+        <div class="task-bar">
+            <div id="p1"></div>
+        </div>
+        <h1>Temperature Converter</h1>
+        <div class="inputs">
+            <div>
+                <label for="degree">Degrees (&deg;C)</label>
+                <input type="number" name="degree" id="inputValue" placeholder= "Enter the Value" required>
+            </div>
+            <div>
+                <label for="type">Convert to</label>
+                <select name="type" id="type">
+                    <option value="celcius">Celcius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" id="btn" onclick="temperature()">Convert</button>
+        <div class="resultss">
+            <label for="result">Your Result</label>
+            <div id="result"></div>
+        </div>
+    </div>
+</main>
+</body>
+<footer>
+    <div class="footer1">
+    <p>Made By Anshul Sharma</p>
+
+    Copyright &copy; Temparature Converter | All rights reserved
+</div>
+</footer>
+<script src="index.js"></script>
+
+</html>
